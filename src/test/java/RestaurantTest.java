@@ -34,13 +34,13 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>ORDER TOTAL<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-//
-//    @Test
-//    public void sending_itemList_should_calculate_orderTotal_based_on_name() throws itemNotFoundException{
-//        setRestaurant();
-//        assertEquals(388,restaurant.getOrderTotal(new String[]{"Sweet corn soup", "Vegetable lasagne"}));
-//    }
-//
+
+    @Test
+    public void sending_itemList_should_calculate_orderTotal_based_on_name() throws itemNotFoundException{
+        setRestaurant();
+        assertEquals(388,restaurant.getOrderTotal(new String[]{"Sweet corn soup", "Vegetable lasagne"}));
+    }
+
     @Test
     public void sending_notPresent_itemList_should_throw_exception(){
         setRestaurant();
