@@ -41,12 +41,12 @@ class RestaurantTest {
 //        assertEquals(388,restaurant.getOrderTotal(new String[]{"Sweet corn soup", "Vegetable lasagne"}));
 //    }
 //
-//    @Test
-//    public void sending_notPresent_itemList_should_throw_exception(){
-//        setRestaurant();
-//        assertThrows(itemNotFoundException.class,
-//                ()->restaurant.getOrderTotal(new String[]{"Sweet corn soup", "Sizzling brownie"}));
-//    }
+    @Test
+    public void sending_notPresent_itemList_should_throw_exception(){
+        setRestaurant();
+        assertThrows(itemNotFoundException.class,
+                ()->restaurant.getOrderTotal(new String[]{"Sweet corn soup", "Sizzling brownie"}));
+    }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 

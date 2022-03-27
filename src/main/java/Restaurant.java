@@ -54,19 +54,19 @@ public class Restaurant {
         return name;
     }
 
-//    public int getOrderTotal(String[] itemNames) throws itemNotFoundException{
-//        int orderTotal = 0;
-//        String notFoundItem = "";
-//        for(int i=0 ; i<itemNames.length ; i++){
-//            for(Item item: menu){
-//                if(item.getName().equals(itemNames[i])){
-//                    orderTotal += item.getPrice();
-//                }
-//                notFoundItem = item.getName();
-//            }
-//            throw new itemNotFoundException(notFoundItem);
-//        }
-//        return orderTotal;
-//    }
+    public int getOrderTotal(String[] itemNames) throws itemNotFoundException{
+        int orderTotal = 0;
+        String notFoundItem = "";
+        for(int i=0 ; i<itemNames.length ; i++){
+            for(Item item: menu){
+                if(item.getName().equals(itemNames[i])){
+                    orderTotal += item.getPrice();
+                }
+                notFoundItem = item.getName();
+            }
+            throw new itemNotFoundException(notFoundItem);
+        }
+        return orderTotal;
+    }
 
 }
